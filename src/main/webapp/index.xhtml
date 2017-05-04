@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Simple Calculator</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:inputText id="txtOutPut" size="30" value="#{simpleCalculatorMB.outPutValue}"
+                         style="text-align: right"/>
+            <p:panelGrid >
+                <p:row >
+                    <p:column colspan="2" >
+                        <p:commandButton value="7" actionListener="#{simpleCalculatorMB.number7Clicked()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="8" actionListener="#{simpleCalculatorMB.number8Clicked()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="9" actionListener="#{simpleCalculatorMB.number9Clicked()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="/" actionListener="#{simpleCalculatorMB.devisionOperatorClicked()}"/>
+                    </p:column>
+                </p:row>
+                <p:row >
+                    <p:column colspan="2" >
+                        <p:commandButton value="4" actionListener="#{simpleCalculatorMB.number5Clicked()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="5" actionListener="#{simpleCalculatorMB.number5Clicked()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="6" actionListener="#{simpleCalculatorMB.number6Clicked()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="*" actionListener="#{simpleCalculatorMB.multiplyOperatorClicked()}"/>
+                    </p:column>
+                </p:row>
+                <p:row >
+                    <p:column colspan="2" >
+                        <p:commandButton value="1" actionListener="#{simpleCalculatorMB.number1Clicked()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="2" actionListener="#{simpleCalculatorMB.number2Clicked()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="3" actionListener="#{simpleCalculatorMB.number3Clicked()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="-" actionListener="#{simpleCalculatorMB.minusOperatorClicked()}" />
+                    </p:column>
+                </p:row>
+                <p:row >
+                    <p:column colspan="2" >
+                        <p:commandButton value="0" actionListener="#{simpleCalculatorMB.number0Clicked()}" 
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="C" actionListener="#{simpleCalculatorMB.clearAction()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="=" actionListener="#{simpleCalculatorMB.equalOperatorClicked()}"
+                                         update="txtOutPut"/>
+                    </p:column>
+                    <p:column colspan="2" >
+                        <p:commandButton value="+" actionListener="#{simpleCalculatorMB.plusOperatorClicked()}"/>
+                    </p:column>
+                </p:row>
+
+            </p:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+

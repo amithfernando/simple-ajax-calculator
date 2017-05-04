@@ -1,4 +1,4 @@
-#Simple Ajax Calculator
+# Simple Ajax Calculator
 
 This application build using Java EE6
 
